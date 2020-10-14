@@ -5,7 +5,7 @@ services:
     environment:
       CONFIGS: "listen_addresses:'*'"
     ports:
-      - '127.0.0.1:5431:5432'
+      - '127.0.0.1:5432:5432'
     healthcheck:
         test: ["CMD", "pg_isready", "-U", "postgres"]
         interval: 1s
